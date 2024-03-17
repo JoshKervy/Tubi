@@ -1,4 +1,5 @@
 {
+  "version": "1.6.6",
   "language": "en",
   "DeveloperMode": true,
   "autoCreateDB": true,
@@ -18,16 +19,15 @@
   },
   "commandDisabled": [],
   "eventDisabled": [],
-  "BOTNAME": "Bot",
-  "PREFIX": "?",
+  "BOTNAME": "ST2B",
+  "PREFIX": "π",
   "ADMINBOT": [
-    "YOUR_FB_UID",
-    "OTHER_FB_UID"
+    "100021841890220"
   ],
   "DESIGN": {
-    "Title": "BotPack",
-    "Theme": "Blue",
-    "Admin": "YOUR_NAME",
+    "Title": "TUBI Messenger ChatBot",
+    "Theme": "Retro",
+    "Admin": "Josh Viacruzes",
     "Setup": {
       "Info": "Design your own custom terminal Titlebar for the title and must contain no numbers",
       "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Orange, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, Purple, Rainbow, and Hacker themes to enhance your terminal logs."
@@ -46,7 +46,6 @@
     "online": true,
     "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18"
   },
-  "version": "1.6.5",
   "daily": {
     "cooldownTime": 43200000,
     "rewardCoin": 500

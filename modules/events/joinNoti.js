@@ -6,8 +6,9 @@ module.exports.config = {
   description: "GROUP UPDATE NOTIFICATION"
 };
 
-const ADMIN = 'YOUR_NAME';
-const FB_LINK = 'YOUR_FACEBOOK_LINK';
+const MADE_BY = 'ST2B';
+const ADMIN = 'Josh Viacruzes';
+const FB_LINK = 'https://www.facebook.com/JOSHYVREK24';
 
 const fs = require('fs-extra');
 const { loadImage, createCanvas, registerFont } = require("canvas");
@@ -57,7 +58,7 @@ let gifPath = __dirname + '/cache/join/join.gif';
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("Hey There!", event.threadID, () => api.sendMessage({ body: `✅ Group Connection in ${threadName} at ${session} success! \n\n➭ Current Commands: ${commands.size}\n➭ Bot Prefix: ${global.config.PREFIX}\n➭ Version: ${global.config.version}\n➭ Admin: ‹${ADMIN}›\n➭ Facebook: ‹${FB_LINK}›\n➭ Use ${PRFX}help to view command details\n➭ Added bot at: ⟨ ${time} ⟩〈 ${thu} 〉`, attachment: fs.createReadStream(gifPath)}, threadID));
+    return api.sendMessage("Hey There!", event.threadID, () => api.sendMessage({ body: `✅ Group Connection in ${threadName} at ${session} success! \n\n➭ Current Commands: ${commands.size}\n➭ Bot Prefix: ${global.config.PREFIX}\n➭ Version: ${global.config.version}\n➭ Made by: ‹${MADE_BY}›\n➭ Admin: ‹${ADMIN}›\n➭ Facebook: ‹${FB_LINK}›\n➭ Use ${PRFX}help to view command details\n➭ Added bot at: ⟨ ${time} ⟩〈 ${thu} 〉`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
